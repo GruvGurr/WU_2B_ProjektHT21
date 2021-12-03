@@ -1,0 +1,39 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas: 
+    "na na"
+    "om er"
+    ;
+}
+
+#nav {
+    grid-area: na;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "nm nm me bo"
+    ;
+    background-color: lightslategray;
+}
+
+#erbjudanden{
+    grid-area: er;
+    background-color: burlywood;
+
+}
+
+#om_oss{
+    grid-area: om;
+    background-color: burlywood;
+}
