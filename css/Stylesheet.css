@@ -4,7 +4,18 @@
     box-sizing: border-box;
 }
 
-#wrapper {
+nav {
+    grid-area: na;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "nm nm me bo"
+    ;
+    background-color: lightslategray;
+}
+
+#omoss_wrapper {
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -16,17 +27,6 @@
     ;
 }
 
-#nav {
-    grid-area: na;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "nm nm me bo"
-    ;
-    background-color: lightslategray;
-}
-
 #erbjudanden{
     grid-area: er;
     background-color: burlywood;
@@ -36,4 +36,77 @@
 #om_oss{
     grid-area: om;
     background-color: burlywood;
+}
+
+
+#meny_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas: 
+    "na"
+    "me"
+    ;
+}
+
+#meny {
+    grid-area: me;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "m1 m2"
+    "m3 m4"
+    "m5 m6"
+    "m7 m8"
+    ;
+ /* nackdelen med att allt i menyn börjar med k. kadaver kaffe blir kk men det blir även de klassiska kroppskakorna*/
+
+}
+
+#meny_sak1 {
+    grid-area: m1;
+    background-color: aquamarine;
+}
+#meny_sak2 {
+    grid-area: m2;
+    background-color: blue;
+}
+#meny_sak3 {
+    grid-area: m3;
+    background-color: burlywood;
+}
+#meny_sak4 {
+    grid-area: m4;
+    background-color: chartreuse;
+}
+#meny_sak5 {
+    grid-area: m5;
+    background-color: chocolate;
+}
+#meny_sak6 {
+    grid-area: m6;
+    background-color: cornflowerblue;
+}
+#meny_sak7 {
+    grid-area: m7;
+    background-color: crimson;
+}
+#meny_sak8 {
+    grid-area: m8;
+    background-color: darkgoldenrod;
+}
+
+
+#hitta_wrapper{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas:
+    "na"
+    "an"
+    ;
+
 }
