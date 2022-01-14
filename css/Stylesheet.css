@@ -4,15 +4,57 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(/img/donald-giannatti-sWZ85aMZXg4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 nav {
     grid-area: na;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "nm nm me bo"
+    "bl nm in me hi"
     ;
     background-color: lightslategray;
+    height: 80px;
+}
+
+#ikon {
+    content: url(/img/soppa.png);
+    height: 70px;
+    width: 70px;
+    align-self: center;
+    justify-self: center;
+}
+
+#krog_namn {
+    grid-area: nm;
+    font-size: 27px;
+    justify-self: center;
+    align-self: center;
+}
+
+#index_k {
+    grid-area: in;
+}
+
+#meny_k {
+    grid-area: me;
+}
+
+#hitta_k {
+    grid-area: hi;
+}
+
+
+.knapp {
+    font-size: 25px;
+    margin: 20px;
+    width: 200px;
+    background-color: floralwhite;
 }
 
 #omoss_wrapper {
@@ -30,13 +72,70 @@ nav {
 #erbjudanden{
     grid-area: er;
     background-color: burlywood;
-
+    margin: 50px;
+    width: 450px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tit1"
+    "text"
+    "tit2"
+    "text"
+    "tit3"
+    "text"
+    ;
 }
+
+#er_tit1 {
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+#er_tit2 {
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+#er_tit3 {
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+.er_text {
+    justify-self: center;
+    flex-direction: column-reverse;
+    align-self: flex-start;
+    padding: 20px;
+}
+
 
 #om_oss{
     grid-area: om;
     background-color: burlywood;
+    margin: 50px;
+    width: 450px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+    "tit_k"
+    "tex_k"
+    ;
+
 }
+
+#om_titl {
+    font-size: 30px;
+    justify-self: center;
+    align-self: flex-end;
+}
+
 
 
 #meny_wrapper {
@@ -68,37 +167,108 @@ nav {
 
 #meny_sak1 {
     grid-area: m1;
-    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+    "titl bild"
+    "lorm bild"
+    ;
 }
 #meny_sak2 {
     grid-area: m2;
-    background-color: blue;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "namn bild"
+    ;
 }
 #meny_sak3 {
     grid-area: m3;
-    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "namn bild"
+    ;
 }
 #meny_sak4 {
     grid-area: m4;
-    background-color: chartreuse;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "namn bild"
+    ;
 }
 #meny_sak5 {
     grid-area: m5;
-    background-color: chocolate;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "namn bild"
+    ;
 }
 #meny_sak6 {
     grid-area: m6;
-    background-color: cornflowerblue;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "namn bild"
+    ;}
 #meny_sak7 {
     grid-area: m7;
-    background-color: crimson;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "namn bild"
+    ;
 }
 #meny_sak8 {
     grid-area: m8;
-    background-color: darkgoldenrod;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "namn bild"
+    ;
 }
 
+#meny1_bild {
+    grid-area: bild;
+    content: url(/img/kroppkakor.jpg);
+    height: 200px;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+    border-radius: 20px;
+}
+
+.meny_lorem {
+    margin: 40px;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.meny_titl{
+    justify-self: center;
+    align-self: center;
+    font-size: 25px;
+}
+
+.menysak {
+    background-color: rgb(109, 150, 127);
+    margin: 20px;
+    height: 300px;
+    border-radius: 5%;
+    
+}
 
 #hitta_wrapper{
     display: grid;
