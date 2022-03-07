@@ -13,6 +13,7 @@ body {
 nav {
     grid-area: na;
     display: grid;
+    width: 100vw;
     grid-template-columns: 80px 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
